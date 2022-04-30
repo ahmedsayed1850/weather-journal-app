@@ -32,6 +32,8 @@ const Highlight = () => {
   const fillerStyles = {
     transition: "width 1s ease-in-out",
     width: `${widthFixed}%`,
+  };
+  const humidityStyle = {
     height: `${humidityCurrent}%`,
   };
   if (cWeather === null) return <CardWire />;
@@ -96,7 +98,7 @@ const Highlight = () => {
               <span className="text-3xl font-thin">%</span>
             </p>
             <article className="humiBar">
-              <span className="humiProgress" style={fillerStyles}></span>
+              <span className="humiProgress" style={humidityStyle}></span>
             </article>
           </section>
         </section>
@@ -122,7 +124,7 @@ const Highlight = () => {
 
           <article className="py-2">
             <figure className="flex items-center py-1">
-              <img className="w-10" src={MinTemp} alt="Min Temperature" />
+              <img className="w-10" src={MaxTemp} alt="Max Temperature" />
 
               <figcaption className="text-2xl font-extrabold">
                 {cel
@@ -134,7 +136,7 @@ const Highlight = () => {
               </figcaption>
             </figure>
             <figure className="flex items-center py-1">
-              <img className="w-10" src={MaxTemp} alt="Max Temperature" />
+              <img className="w-10" src={MinTemp} alt="Min Temperature" />
               <figcaption className="text-2xl font-extrabold">
                 {cel
                   ? Math.floor(forecast[0].temp.min)
