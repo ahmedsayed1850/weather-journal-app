@@ -1,0 +1,35 @@
+.settingBtn {
+  background-color: #fff;
+  width: 38px;
+  height: 36px;
+  margin: 0 7px;
+  border-radius: 50%;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.settingBtn:hover {
+  background-color: #e5e5fd;
+  transform: scale(1.1);
+}
+
+.settingBtn:focus,
+.settingBtn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.settingBtn.dark {
+  color: #fff;
+  background-color: #1e213a;
+}
+
+.settingBtn.dark:hover {
+  background-color: #2d3157;
+}
+
+.settingBtn.dark:focus,
+.settingBtn.active:focus {
+  background-color: #2d3157;
+}

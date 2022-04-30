@@ -1,0 +1,18 @@
+.forecastCard {
+    max-width: 170px;
+    height: 160px;
+    max-height: 200px;
+    border: transparent;
+    background-color: #f0f0fc;
+    /* background-color: #1e213a; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.forecastCard.dark {
+    color: #fff;
+    border: transparent;
+    background-color: #1e213a;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px,
+        rgba(255, 255, 255, 0.08) 0px 4px 6px -2px;
+}

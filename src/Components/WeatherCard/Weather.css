@@ -1,0 +1,6 @@
+.cloudsBg {
+    position: absolute;
+    transform: scale(1.5);
+    opacity: 0.45;
+    top: 60px;
+}

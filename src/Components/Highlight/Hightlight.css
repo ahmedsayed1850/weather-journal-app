@@ -1,0 +1,122 @@
+.uvCard,
+.windCard,
+.sunCard,
+.humidityCard,
+.visibleCard,
+.tempCard {
+    width: 100%;
+    max-width: 280px;
+    height: 170px;
+    max-height: 200px;
+    border: 1px solid #f8f8ff;
+    background-color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+
+.uvCard.dark,
+.windCard.dark,
+.sunCard.dark,
+.humidityCard.dark,
+.visibleCard.dark,
+.tempCard.dark {
+    text-align: center;
+    border: transparent;
+    background-color: #1e213a;
+    color: #fff;
+    padding: 12px;
+}
+
+.uvCard {
+    box-shadow: rgba(255, 237, 102, 0.1) 0px 10px 15px -3px,
+        rgba(255, 237, 102, 0.3) 0px 4px 6px -2px;
+}
+
+.windCard {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.windCard.dark {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px,
+        rgba(255, 255, 255, 0.08) 0px 4px 6px -2px;
+}
+
+.sunCard {
+    /* color: rgb(251, 191, 36); */
+    box-shadow: rgba(251, 191, 36, 0.1) 0px 10px 15px -3px,
+        rgba(251, 191, 36, 0.3) 0px 4px 6px -2px;
+}
+
+.humidityCard {
+    box-shadow: rgba(102, 105, 255, 0.1) 0px 10px 15px -3px,
+        rgba(102, 105, 255, 0.3) 0px 4px 6px -2px;
+}
+
+.visibleCard {
+    box-shadow: rgba(103, 232, 249, 0.1) 0px 10px 15px -3px,
+        rgba(103, 232, 249, 0.3) 0px 4px 6px -2px;
+}
+
+.tempCard {
+    box-shadow: rgba(239, 68, 68, 0.1) 0px 10px 15px -3px,
+        rgba(239, 68, 68, 0.3) 0px 4px 6px -2px;
+}
+
+.uvBar {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+    height: 10px;
+    width: 80%;
+    background-color: #e0e0de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uvProgress {
+    position: absolute;
+    background-color: #ffed66;
+    /* border-radius: inherit; */
+    text-align: left;
+    position: "absolute";
+    bottom: -3px;
+    left: 0;
+    height: 16px;
+    /* width: 16px; */
+}
+
+.humiBar {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+    width: 24px;
+    height: 60%;
+    border: 1px solid #e0e0de;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.humiProgress {
+    position: absolute;
+    background-color: rgb(102, 105, 255);
+    border-radius: inherit;
+    text-align: left;
+    position: "absolute";
+    bottom: 0;
+    /* left: 0; */
+    width: 20px;
+    /* width: 16px; */
+}
+
+.sunIcon {
+    color: #fff;
+    background-color: #ffe100;
+    border: 6px solid #ffe100;
+    border-radius: 50%;
+}
