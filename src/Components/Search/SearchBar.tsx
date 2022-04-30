@@ -8,7 +8,7 @@ const SearchBar: React.FC<IProps> = ({ setSearchActive }) => {
   const [city, setCity] = useState("");
   const { theme, fetchWeather } = useContext(WeatherContext);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     fetchWeather(city);
     setSearchActive(false);

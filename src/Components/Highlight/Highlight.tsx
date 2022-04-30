@@ -6,24 +6,27 @@ import CardWire from "../CardWire";
 import "./Hightlight.css";
 
 const Highlight = () => {
+  // is the humidity in the weather by default 80
   const [humidityCurrent, setHumidityCurrent] = useState(80);
-  const { cWeather } = useContext(WeatherContext);
-  const { theme, cel, forecast } = useContext(WeatherContext);
-
+  const { theme, cel, forecast, cWeather } = useContext(WeatherContext);
+  // only change when humidity changes and humidity change when the location change
   useEffect(() => {
     setHumidityCurrent(cWeather?.humidity);
   }, [cWeather?.humidity, setHumidityCurrent]);
 
+  // get the sunrise from api then convert it to 24 hour
   const sunriseCalc = new Date(cWeather?.sunrise * 1000);
   const sunriseHour = sunriseCalc.getHours();
   const sunriseMin = sunriseCalc.getMinutes();
   const sunriseInfo = sunriseHour + ":" + sunriseMin;
-
+  // get the sunset from api then convert it to 24 hour
   const sunsetCalc = new Date(cWeather?.sunset * 1000);
   const sunsetHour = sunsetCalc.getHours();
   const sunsetMin = sunsetCalc.getMinutes();
   const sunsetInfo = sunsetHour + ":" + sunsetMin;
 
+  // The UVI is a measure of the level of UV radiation. The values of the index range from zero upward -
+  // the higher the UVI, the greater the potential for damage to the skin and eye, and the less time it takes for harm to occur.
   const widthFixed = Math.floor(cWeather?.uvi + 5);
 
   const fillerStyles = {
@@ -32,7 +35,7 @@ const Highlight = () => {
     height: `${humidityCurrent}%`,
   };
   if (cWeather === null) return <CardWire />;
-
+  // for each card render specific data from context
   return (
     <section className="py-10">
       <h2 className="text-2xl tracking-wider font-bold mb-8 lg:w-4/5 w-11/12 mx-auto">

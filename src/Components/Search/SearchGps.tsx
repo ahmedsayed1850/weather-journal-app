@@ -18,6 +18,7 @@ const SearchGps: React.FC<IProps> = ({ searchActive, setSearchActive }) => {
     maximumAge: 0,
   };
 
+  // handle when user click on the icon will enable location and pass it to API
   const handleLocation = (ilocation: any) => {
     console.log(
       "Please Don't reload",
@@ -26,6 +27,7 @@ const SearchGps: React.FC<IProps> = ({ searchActive, setSearchActive }) => {
     );
     weatherGps(ilocation.coords.latitude, ilocation.coords.longitude);
   };
+  // navigator is a javascript function that get the location of the user by their IP Longitude and lat
   const getLocation = () => {
     navigator.geolocation.getCurrentPosition(
       handleLocation,
@@ -34,6 +36,7 @@ const SearchGps: React.FC<IProps> = ({ searchActive, setSearchActive }) => {
     );
   };
 
+  // 
   return (
     <section className="flex justify-between pt-6 items-center w-4/5 mx-auto">
       <button

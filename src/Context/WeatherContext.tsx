@@ -6,8 +6,8 @@ interface WeatherContextType {
     error: any;
     handleTheme: () => void;
     theme: string;
-    cWeather: any
-    forecast: any
+    cWeather: any;
+    forecast: any;
     location: {
       city: string;
       country: string;
@@ -24,27 +24,30 @@ interface WeatherContextType {
 }
 type WData = WeatherContextType["data"];
 const WeatherContext = createContext<WData>({} as WData);
-
+// Change API key to local virable if you are willing to use it for production mode
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
-const ApiKey = "54dd62174bb0cdf8300acdfc1fb92412";
+const ApiKey = "89ee527580941754fd82b66af125b56e";
 
 const WeatherProvider = ({ children }: any) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [theme, setTheme] = useState("");
   const [cWeather, setcWeather] = useState(null);
+  // array of next 5 days you can update UI from Forecarst Card default to null to handle error
   const [forecast, setForecast] = useState(null);
+  // the location and country are used in Search container component it will get city and country from API when user enter city and re-render it
   const [location, setLocation] = useState({
     city: "",
     country: "",
   });
+  // min and max are used in Highlight component Minimum temperature and max will auto convert to fahrenheit
   const [temp, setTemp] = useState({
     min: "",
     max: "",
   });
+  // cel is celsius will auto detect in highlight and search component if it's true or not to revert to fahrenheit
   const [cel, setCel] = useState(true);
-  console.log(cWeather);
-
+  // dark theme option don't change classname moon-icon if you can make sure to update it here
   const handleTheme = () => {
     let moonBtn = document.querySelector(".moon-icon") as HTMLDivElement;
 
@@ -55,6 +58,7 @@ const WeatherProvider = ({ children }: any) => {
     }
   };
 
+  // fetch API with try and catch Promise
   const fetchWeather = async (parameter: any) => {
     setLoading(true);
     setError(false);
@@ -94,7 +98,8 @@ const WeatherProvider = ({ children }: any) => {
     }
   };
 
-  const weatherGps = async (lat: any, long: any) => {
+  // latitude and longitude is a way to communicate and get the place on the map
+  const weatherGps = async (lat: number, long: number) => {
     setLoading(true);
 
     try {
@@ -111,7 +116,8 @@ const WeatherProvider = ({ children }: any) => {
         min: data.main.temp_max,
         max: data.main.temp_min,
       });
-
+      //
+      // check if data is true then give the data to weather and forecast
       if (data) {
         try {
           const res = await fetch(
@@ -149,7 +155,7 @@ const WeatherProvider = ({ children }: any) => {
     setCel,
     cel,
   };
-
+  // a context provide like redux store will help to pass or change the global data without going into the one direction flow
   return (
     <WeatherContext.Provider value={data}>{children}</WeatherContext.Provider>
   );

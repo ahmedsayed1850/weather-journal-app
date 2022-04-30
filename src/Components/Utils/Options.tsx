@@ -36,6 +36,7 @@ const Options = () => {
           dark_mode
         </span>
       </button>
+      {/* setcel true does convert from celsius to fehranheit */}
       <button className={`settingBtn ${theme}`} onClick={() => setCel(true)}>
         <span>ºC</span>
       </button>

@@ -17,6 +17,7 @@ const ForecastContainer = () => {
       </h2>
       <article className="grid md:grid-cols-4 grid-cols-2 justify-items-center gap-5">
         {forecast.map((item: any) => {
+          // map through the array of forecast next 8 days
           const time = new Date(item.dt * 1000);
           const days = [
             "Sunday",
