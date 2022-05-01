@@ -1,6 +1,6 @@
 <h1 align="center">⛅ 𝗪𝗲𝗮𝘁𝗵𝗲𝗿 𝗔𝗽𝗽</h1>
 <p align="center">
-❗ Demo Online <a href="https://ornate-kringle-5952d0.netlify.app/" target="_blank">Click Here</a>
+❗ Demo Online <a href="https://reliable-pasca-fe2766.netlify.app/" target="_blank">Click Here</a>
 </p>
 <div>
   <p>🔎 <strong>About: </strong>See the weather in your city/state or anywhere in the world.</p>
@@ -186,8 +186,7 @@ High section have 6 cards each card have special functions and it's own states
 ## Preview
 
 ### Desktop
-![](https://s1.gifyu.com/images/React-App-1.gif)
-
+[![React-App-1.gif](https://s1.gifyu.com/images/React-App-1.gif)](https://gifyu.com/image/SsNEO)
 ### Mobile
 ![](https://s1.gifyu.com/images/Weather-App.gif)
 
