@@ -179,9 +179,6 @@ High section have 6 cards each card have special functions and it's own states
 
 ## Preview
 
-
-<h3 align="center">Desktop</h3>
 ![](https://s1.gifyu.com/images/Weather-App.gif)
 
-<h3 align="center">Mobile View</h3>
 ![]https://s1.gifyu.com/images/React-App-1.gif)
