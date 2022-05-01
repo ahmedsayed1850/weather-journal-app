@@ -62,10 +62,12 @@ I have setup data coord and API url must given from
           console.log(error);
           setLoading(false);
           setError(true);
-        } ```
+        }
+```
 ### React Context
 Remember to add stetes and functions to consume it later in the component
-```  const data = {
+```
+const data = {
     loading,
     error,
     handleTheme,
@@ -78,11 +80,13 @@ Remember to add stetes and functions to consume it later in the component
     weatherGps,
     setCel,
     cel,
-  };```
+  };
+```
 
 ### consume cotext
 You can consume context like example blow
-```  const { cWeather, location, cel } = useContext(WeatherContext);
+```  
+const { cWeather, location, cel } = useContext(WeatherContext);
 // Fallback
   if (cWeather === null) {
     return <CardWire />;
@@ -91,7 +95,8 @@ You can consume context like example blow
         <div
           id={cWeather.weather[0].id}
           desc={cWeather.weather[0].description}
-        />```
+        />
+```
 
 ### change dark mode and cel to fahrenheit
 ```
@@ -99,7 +104,8 @@ You can consume context like example blow
         className={`moon-icon settingBtn relative top-1.5 ${theme}`}
         onClick={handleTheme}
       >
-      <button className={`settingBtn ${theme}`} onClick={() => setCel(true)} />```
+      <button className={`settingBtn ${theme}`} onClick={() => setCel(true)} />
+ ```
 
 
 ### get current weather
@@ -178,8 +184,9 @@ High section have 6 cards each card have special functions and it's own states
 ```
 
 ## Preview
+
 ### Desktop
-![]https://s1.gifyu.com/images/React-App-1.gif)
+![](https://s1.gifyu.com/images/React-App-1.gif)
 
 ### Mobile
 ![](https://s1.gifyu.com/images/Weather-App.gif)
