@@ -178,7 +178,10 @@ High section have 6 cards each card have special functions and it's own states
 ```
 
 ## Preview
+### Desktop
+![]https://s1.gifyu.com/images/React-App-1.gif)
 
+### Mobile
 ![](https://s1.gifyu.com/images/Weather-App.gif)
 
-![]https://s1.gifyu.com/images/React-App-1.gif)
+
