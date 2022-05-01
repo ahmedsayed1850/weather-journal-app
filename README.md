@@ -23,7 +23,8 @@
   - [x] Convert temperature in Celsius to Fahrenheit
   - [x] Dark Mode
   - [x] Icons and special CSS style for each card
-  - [x] 
+  - [x] If the user rejects the current location request permission, the location will be fetched through the ip address.
+  - [x] Responsive Design
 </div>
 
 <div>
@@ -180,8 +181,7 @@ High section have 6 cards each card have special functions and it's own states
 
 
 <h3 align="center">Desktop</h3>
-<iframe src="https://drive.google.com/file/d/1bvINiKU-7xG5o7TwXX56ETb0kl3DDEg0/view" width="640" height="480"></iframe>
-
+![]https://drive.google.com/file/d/1bvINiKU-7xG5o7TwXX56ETb0kl3DDEg0/view)
 
 <h3 align="center">Mobile View</h3>
-<iframe src="https://drive.google.com/file/d/1LEtCXEeZvYL5u01izpIDZsYFWjObq4fn/view" width="640" height="480"></iframe>
+![]https://drive.google.com/file/d/1bvINiKU-7xG5o7TwXX56ETb0kl3DDEg0/view)
