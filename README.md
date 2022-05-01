@@ -25,20 +25,16 @@
   - [x] Icons and special CSS style for each card
   - [x] If the user rejects the current location request permission, the location will be fetched through the ip address.
   - [x] Responsive Design
+  - [x] Additional weather information
 </div>
 
-<div>
-  <h2>⚙️ 𝗣𝗹𝘂𝘀</h2>
-  <p>✔️ If the user rejects the current location request permission, the location will be fetched through the ip address.</p>
-  <p>✔️ Search autocomplete.</p>
-</div>
 
 ## API
 Weather data is retrieved from http://openweathermap.org/
 OpenWeather platform is a set of elegant and widely recognisable APIs. Powered by convolutional machine learning solutions, it is capable of delivering all the weather information necessary for decision-making for any location on the globe. To start using our APIs, please sign up here.
 
 ##Instructions
-to start this project git clone [this-git-repo] install all dependiencies by npm i to start this project npm start if you want to run it for production npm run build change API keys with your own this for test only not built for production cases
+to start this project git clone [this-git-repo] install all dependiencies by `npm i` to start this project `npm start` if you want to run it for production `npm run build` change API keys with your own this for test only not built for production cases
 
 ### API Usage
 This build is for local mode not for production mode to change for producton use process.env.[VARIABL_NAME]
@@ -190,4 +186,21 @@ High section have 6 cards each card have special functions and it's own states
 ### Mobile
 ![](https://s1.gifyu.com/images/Weather-App.gif)
 
+## Folder Structure
+
+├── .gitignore
+├── demo.tree
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│  ├── favicon.ico
+│  ├── index.html
+│  ├── logo192.png
+│  ├── logo512.png
+│  ├── manifest.json
+│  └── robots.txt
+├── README.md
+├── tailwind.config.js
+└── tsconfig.json
 
