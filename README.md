@@ -193,14 +193,64 @@ High section have 6 cards each card have special functions and it's own states
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.js
-├── public
-│  ├── favicon.ico
-│  ├── index.html
-│  ├── logo192.png
-│  ├── logo512.png
-│  ├── manifest.json
-│  └── robots.txt
 ├── README.md
+├── src
+│  ├── App.css
+│  ├── App.test.tsx
+│  ├── App.tsx
+│  ├── assets
+│  │  ├── 7hdN9MGQ_4x.jpg
+│  │  ├── Cloud-background.png
+│  │  ├── ForecastWeather.svg
+│  │  ├── Icons
+│  │  │  ├── Clear.png
+│  │  │  ├── Hail.png
+│  │  │  ├── HeavyCloud.png
+│  │  │  ├── HeavyRain.png
+│  │  │  ├── LightCloud.png
+│  │  │  ├── LightRain.png
+│  │  │  ├── MaxTemp.png
+│  │  │  ├── MinTemp.png
+│  │  │  ├── Shower.png
+│  │  │  ├── Sleet.png
+│  │  │  ├── Snow.png
+│  │  │  └── Thunderstorm.png
+│  │  ├── Sad.png
+│  │  └── WeatherLogo.png
+│  ├── Components
+│  │  ├── CardWire.tsx
+│  │  ├── Error
+│  │  │  └── 404.tsx
+│  │  ├── ForecastCard
+│  │  │  ├── Forecast.css
+│  │  │  └── ForecastCard.tsx
+│  │  ├── Highlight
+│  │  │  ├── Highlight.tsx
+│  │  │  └── Hightlight.css
+│  │  ├── PreLoader
+│  │  │  ├── PreLoader..css
+│  │  │  └── PreLoader.tsx
+│  │  ├── Search
+│  │  │  ├── Search.css
+│  │  │  ├── SearchBar.tsx
+│  │  │  ├── SearchContainer.tsx
+│  │  │  └── SearchGps.tsx
+│  │  ├── Utils
+│  │  │  ├── Options.css
+│  │  │  └── Options.tsx
+│  │  └── WeatherCard
+│  │    ├── Weather.css
+│  │    ├── Weather.tsx
+│  │    └── WeatherIcon.tsx
+│  ├── Context
+│  │  ├── app.d.ts
+│  │  └── WeatherContext.tsx
+│  ├── index.css
+│  ├── index.tsx
+│  ├── logo.svg
+│  ├── react-app-env.d.ts
+│  ├── reportWebVitals.ts
+│  └── setupTests.ts
 ├── tailwind.config.js
 └── tsconfig.json
 ```
